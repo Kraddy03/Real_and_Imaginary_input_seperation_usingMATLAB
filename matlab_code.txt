@@ -1,0 +1,8 @@
+X=[-5i, 2, 3i, 4, 6, 8i, 8 ,0];
+idx = find(imag(X) == 0);
+X_real = X(idx);
+X_imag = X(~idx);
+    idx = find(imag(X));
+    X_new = X(idx);
+fprintf('%10.2f%10.2f%20.2f%22f%20f%8.2f\n',X_real);
+fprintf('%10.2f%10.2f%20.2f%22f%20f%8.2f\n',X_new);
